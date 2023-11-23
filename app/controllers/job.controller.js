@@ -13,6 +13,9 @@ exports.create = (req, res) => {
     const job = new Job({
       title: req.body.title,
       description: req.body.description,
+      role: req.body.role,
+      company: req.body.company,
+      salary: req.body.salary,
       published: req.body.published ? req.body.published : false
     });
   
@@ -93,7 +96,7 @@ exports.update = (req, res) => {
 exports.delete = (req, res) => {
     const id = req.params.id;
   
-    Job.findByIdAndRemove(id)
+    Job.findByIdAndDelete(id)
       .then(data => {
         if (!data) {
           res.status(404).send({

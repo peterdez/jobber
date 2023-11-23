@@ -5,6 +5,9 @@ module.exports = mongoose => {
         {
           title: String,
           description: String,
+          role: String,
+          company: String,
+          salary: Number,
           published: Boolean
         },
         { timestamps: true }
