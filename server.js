@@ -6,7 +6,7 @@ require('dotenv').config();
 const app = express();
 
 var corsOptions = {
-  origin: "https://jobber-react-igy553g0b-peterdez.vercel.app/"
+  origin: "https://jobber-react-igy553g0b-peterdez.vercel.app"
 };
 
 app.use(cors(corsOptions));
