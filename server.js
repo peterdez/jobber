@@ -5,27 +5,13 @@ require('dotenv').config();
 
 const app = express();
 
-/*var corsOptions = {
+var corsOptions = {
   origin: "https://jobber-react-igy553g0b-peterdez.vercel.app"
-};*/
+};
 
 //app.use(cors(corsOptions));
 
 app.use(cors());
-
-// Curb Cors Error by adding a header here
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
-  );
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, PUT, DELETE, PATCH, OPTIONS"
-  );
-  next();
-});
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
