@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": "18.13.0"
+  },
   "keywords": [
     "nodejs",
     "express",
@@ -14,7 +17,7 @@
     "api",
     "jobs"
   ],
-  "author": "Peter Adebanjo\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bPeteFemi\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Ci Ade",
+  "author": "Peter Adebanjo",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
