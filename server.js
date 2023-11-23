@@ -5,11 +5,13 @@ require('dotenv').config();
 
 const app = express();
 
-var corsOptions = {
+/*var corsOptions = {
   origin: "https://jobber-react-igy553g0b-peterdez.vercel.app"
-};
+};*/
 
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
+
+app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
